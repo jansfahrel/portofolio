@@ -502,9 +502,12 @@ const SKILLS = {
   "Bahasa Pemrograman": [
     { name: "Python", icon: "devicon-python-plain colored" },
     { name: "C / C++", icon: "devicon-cplusplus-plain colored" },
+    { name: "Go (Golang)", icon: "devicon-go-original-wordmark colored" },
+    { name: "TypeScript", icon: "devicon-typescript-plain colored" },
     { name: "JavaScript", icon: "devicon-javascript-plain colored" },
     { name: "Java", icon: "devicon-java-plain colored" },
-    { name: "PHP", icon: "devicon-php-plain colored" }
+    { name: "PHP", icon: "devicon-php-plain colored" },
+    { name: "HTML & CSS", icon: "devicon-css3-plain colored" }
   ],
   "IoT & Hardware": [
     { name: "Arduino", icon: "devicon-arduino-plain colored" },
@@ -517,6 +520,8 @@ const SKILLS = {
     { name: "Git & GitHub", icon: "devicon-git-plain colored" },
     { name: "Node.js", icon: "devicon-nodejs-plain colored" },
     { name: "MySQL / Firebase", icon: "devicon-mysql-plain colored" },
+    { name: "Docker", icon: "devicon-docker-plain colored" },
+    { name: "Makefile", icon: "custom:make" },
     { name: "VS Code", icon: "devicon-vscode-plain colored" },
     { name: "Fritzing (desain PCB)", icon: "custom:pcb" }
   ]
@@ -526,10 +531,12 @@ const CUSTOM_ICONS = {
   chip:`<svg viewBox="0 0 24 24" fill="none"><rect x="6" y="6" width="12" height="12" rx="1.5" stroke="#FFD400" stroke-width="1.6"/><rect x="9.5" y="9.5" width="5" height="5" rx=".5" fill="#FF2E3B" opacity=".85"/><path d="M6 9H3M6 12H3M6 15H3M18 9h3M18 12h3M18 15h3M9 6V3M12 6V3M15 6V3M9 18v3M12 18v3M15 18v3" stroke="#FFD400" stroke-width="1.3" stroke-linecap="round"/></svg>`,
   sensor:`<svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.4" fill="#FF2E3B"/><path d="M8.2 8.2a5.3 5.3 0 0 0 0 7.6M15.8 8.2a5.3 5.3 0 0 1 0 7.6" stroke="#FFD400" stroke-width="1.5" stroke-linecap="round"/><path d="M5 5a9.6 9.6 0 0 0 0 14M19 5a9.6 9.6 0 0 1 0 14" stroke="#FFD400" stroke-width="1.4" stroke-linecap="round" opacity=".55"/></svg>`,
   mqtt:`<svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="12" r="2" fill="#FF2E3B"/><circle cx="18" cy="6" r="2" fill="#FFD400"/><circle cx="18" cy="18" r="2" fill="#FFD400"/><path d="M8 12h2a4 4 0 0 1 4-4h2M8 12h2a4 4 0 0 0 4 4h2" stroke="#A99F8E" stroke-width="1.4" fill="none"/></svg>`,
-  pcb:`<svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="2" stroke="#FFD400" stroke-width="1.5"/><path d="M7 3.5V8h4v4H7m10-8.5V8h-4M7 20.5V16h10v4.5M17 12v4" stroke="#FF2E3B" stroke-width="1.3" stroke-linecap="round"/><circle cx="7" cy="8" r="1" fill="#FFD400"/><circle cx="17" cy="16" r="1" fill="#FFD400"/></svg>`
+  pcb:`<svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="2" stroke="#FFD400" stroke-width="1.5"/><path d="M7 3.5V8h4v4H7m10-8.5V8h-4M7 20.5V16h10v4.5M17 12v4" stroke="#FF2E3B" stroke-width="1.3" stroke-linecap="round"/><circle cx="7" cy="8" r="1" fill="#FFD400"/><circle cx="17" cy="16" r="1" fill="#FFD400"/></svg>`,
+  make:`<svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="4" width="17" height="16" rx="2" stroke="#FFD400" stroke-width="1.5"/><path d="M7 9l3 3-3 3" stroke="#FF2E3B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.5 15h4.5" stroke="#FFD400" stroke-width="1.6" stroke-linecap="round"/></svg>`
 };
 
 const PROJECTS = [
+  { title: "Room Booking System (Industrix Assessment)", desc: "Aplikasi pemesanan ruangan yang dibuat sebagai technical assessment Industrix. Backend ditulis dengan Go, antarmuka web dengan TypeScript, dan seluruh layanan dikemas dengan Docker serta dijalankan lewat Makefile.", tags: ["Go","TypeScript","CSS","Docker","Makefile"], link: "https://github.com/jansfahrel/room-booking-assessment" },
   { title: "Poto otomatis dan kirim ke Telegram", desc: "Sistem keamanan berbasis ESP32-CAM yang secara otomatis mengambil foto saat mendeteksi gerakan, kemudian mengirim hasil foto langsung ke Telegram menggunakan Bot API melalui koneksi WiFi.", tags: ["ESP32-CAM","Telegram Bot","WiFi","IoT"], link: "https://github.com/jansfahrel/esp32-cam-room-security-" },
   { title: "Portable NPK Soil Monitoring", desc: "Perangkat IoT untuk mengukur unsur hara tanah (NPK), pH, suhu, dan kelembapan menggunakan ESP32 dan sensor RS485. Data ditampilkan secara real-time.", tags: ["ESP32","RS485","IoT","C++"], link: "https://github.com/jansfahrel/Perangkat-Pengukur-Unsur-Hara-Tanah-Tugas-Akhir-" },
   { title: "E-Tugas Microservices", desc: "Aplikasi manajemen tugas berbasis Laravel Microservices dengan Authentication Service, API Gateway, MySQL Replication, dan HAProxy Load Balancer.", tags: ["Laravel","Microservices","MySQL","HAProxy"], link: "https://github.com/jansfahrel/aplikasi_e-tugas" },
